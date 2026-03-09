@@ -8,6 +8,3 @@ def ReverseString(s):
         left += 1
         right -= 1
     return s
-
-hehe = ReverseString(['M', 'a', 'd'])
-print(hehe)

@@ -8,6 +8,3 @@ def StockProfit(prices):
             maxProfit = max(maxProfit, prices[i]-bestBuy)
         bestBuy = min(bestBuy, prices[i])
     return maxProfit
-
-hehe = StockProfit([7, 1, 3, 8, 4, 5])
-print(hehe)

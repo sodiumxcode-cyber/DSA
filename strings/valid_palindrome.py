@@ -15,6 +15,3 @@ def IsPalindrome(s):
         right -= 1
     
     return True
-
-hehe = IsPalindrome("My name is, Madhav:")
-print(hehe)
