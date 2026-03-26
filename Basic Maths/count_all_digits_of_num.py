@@ -1,11 +1,32 @@
-#Count all digits of a num
-#Problem - You have to return the num of digits present in a number
+# ============================================================
+# Count All Digits of a Number
+# ============================================================
+# Given an integer n, return the number of digits in it.
+#
+# Example:
+#   Input:  n = 12345
+#   Output: 5
+#
+#   Input:  n = 7
+#   Output: 1
+#
+# Time Complexity:  O(log(n))
+# Space Complexity: O(1)
+# ============================================================
 
-def countDigit(num):
-    ans = 0
-    n =  0
+#Approach 1: Loop
+def count_digits(num):
+    num = abs(num)
+    if num == 0:
+        return 1
+    
+    count = 0
     while num > 0:
-        n = num % 10
-        ans += 1
-        num = num // 10
-    return ans
+        n //= 10
+        count += 1
+    return count
+
+
+#Approach 2: String Conversion
+def count_digit(num):
+    return len(str(abs(num)))
